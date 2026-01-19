@@ -38,6 +38,10 @@ def hello_user():
 def index():
     return render_template('index.html')
 
+@app.route('/useer')
+def userrr():
+    return render_template('insturc.html')
+
 
 
 
