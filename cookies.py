@@ -1,4 +1,4 @@
-import flask from Flask , url_for, render_template, request , make_response 
+from flask import Flask , url_for, render_template, request , make_response 
 
 app = Flask(__name__)
 @app.route("/")
