@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Bookstore</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .book { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; }
+        .title { color: #333; font-size: 18px; font-weight: bold; }
+        .price { color: green; font-weight: bold; }
+        .stock { color: blue; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+
+    <h1 id="main-heading">Best Selling Python Books</h1>
+    <p>We found <span id="total-books">3</span> books for you.</p>
+
+    <div class="book-container">
+        
+        <article class="book">
+            <h2 class="title">
+                <a href="catalogue/python-crash-course.html">Python Crash Course</a>
+            </h2>
+            <p class="author">By: <span class="author-name">Eric Matthes</span></p>
+            <p class="price">$27.99</p>
+            <div class="rating" data-rating="5">*****</div>
+            <p class="stock">In Stock</p>
+        </article>
+
+        <article class="book">
+            <h2 class="title">
+                <a href="catalogue/automate-the-boring-stuff.html">Automate the Boring Stuff</a>
+            </h2>
+            <p class="author">By: <span class="author-name">Al Sweigart</span></p>
+            <p class="price">$25.50</p>
+            <div class="rating" data-rating="4.5">****</div>
+            <p class="stock">In Stock</p>
+        </article>
+
+        <article class="book">
+            <h2 class="title">
+                <a href="catalogue/learning-python.html">Learning Python</a>
+            </h2>
+            <p class="author">By: <span class="author-name">Mark Lutz</span></p>
+            <p class="price">$45.00</p>
+            <div class="rating" data-rating="4">****</div>
+            <p class="stock">Out of Stock</p>
+        </article>
+
+    </div>
+
+    <footer>
+        <p>Contact us at <a href="mailto:support@books.com">support@books.com</a></p>
+    </footer>
+
+</body>
+</html>

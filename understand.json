@@ -1,0 +1,20 @@
+{
+    "name" : "Anjith",
+    "age" : 20,
+    "College" : "IIT Madras",
+    "marks" : {
+        "Maths" : 90,
+        "GenAI" : 85,
+        "BDM" : 88
+    },
+    "Sons" : [
+        {
+            "name" : "Praharsh",
+            "age" : 20
+        },
+        {
+            "name" : "Harsh",
+            "age" : 20
+        }
+    ]
+}
