@@ -60,6 +60,10 @@ conn.close()
 
 '''
 
+
+
+
+'''
 import sqlite3
 
 conn = sqlite3.connect('customer.db')
@@ -80,4 +84,95 @@ conn.commit()
 
 # CLose our connection 
 
+conn.close()
+'''
+
+
+
+
+
+
+'''
+
+import sqlite3
+
+conn = sqlite3.connect('customer.db')
+
+c = conn.cursor()
+
+c.execute("select * from customers")
+#fetchone
+#fetchmany(3)
+#fetchall
+
+#print(c.fetchall()[0])
+print(c.fetchall())
+
+
+conn.commit()
+conn.close()
+
+'''
+
+'''
+
+import sqlite3
+
+conn = sqlite3.connect('customer.db')
+
+c = conn.cursor()
+
+c.execute("select * from customers")
+
+items = c.fetchall()
+
+for item in items:
+    print(item)
+
+
+
+conn.commit()
+conn.close()
+
+'''
+
+
+'''
+import sqlite3
+
+conn = sqlite3.connect('customer.db')
+
+c = conn.cursor()
+
+c.execute("select * from customers")
+
+items = c.fetchall()
+
+for item in items:
+    print(item[0])
+
+
+
+conn.commit()
+conn.close()
+
+'''
+
+
+import sqlite3
+
+conn = sqlite3.connect('customer.db')
+
+c = conn.cursor()
+
+c.execute("select * from customers")
+
+items = c.fetchall()
+
+for item in items:
+    print(item[0] + " " + item[1])
+
+
+
+conn.commit()
 conn.close()
